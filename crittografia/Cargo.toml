@@ -1,0 +1,4 @@
+[dependencies]
+clap = { version = "4.0", features = ["derive"] }
+image = "0.24"
+aes-gcm = "0.10"

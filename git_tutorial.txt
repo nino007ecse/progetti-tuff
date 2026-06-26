@@ -1,0 +1,44 @@
+Tutorial (fatto da NonSonoNinja) pe iniziare ad usare git.
+
+Capitolo 1. Come accedere alla repo.
+
+1.1 aprire il terminale (su windows win+r, cmd) e digitare:
+
+'git config --global user.email "email"'
+'git config --global user.name "nome"'
+
+1.2 aprire vs code e fare i seguenti comandi nel terminale
+
+'cd desktop'
+
+'git clone https://github.com/nino007ecse/progetti-eisipabbiani.git'
+
+Capitolo 2. come iniziare a modificare la repo da git
+
+2.1 Bisogna autenticarsi nella cartella quindi si faranno i seguenti comandi.
+
+'git config user.email "email'
+
+'git config user.name "nome"'
+
+2.2 Bisognerà sincronizzarsi con la repo, quindi si farà il seguente comando.
+
+'git pull'
+
+Capitolo 3. Come aggiungere e modificare files.
+
+3.1 Per testare git se funziona bisogna creare un file di test, bisogna eseguire questo comando.
+
+'git add test.txt'
+
+3.2 Appena effetuato il comando bisognerà fare la commit ovvero il cambio o l'aggiunta nella repo (N.B. SERVE SEMPRE AGGIUNGERE IL MOTIVO DELLA COMMIT)
+
+'git commit -m "motivo"
+
+3.3 Dopo aver fatto la commit bisognerà salvare il file nello repo su github, quindi si eseguirà il seguente codice.
+
+'git push'
+
+3.4 Per eliminare cartelle/ files (come il file di test di prima) bisognerà fare.
+
+'git rm -r nome file/cartella'
