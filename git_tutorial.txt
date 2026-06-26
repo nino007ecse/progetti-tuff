@@ -21,7 +21,11 @@ Capitolo 2. come iniziare a modificare la repo da git
 
 'git config user.name "nome"'
 
-2.2 Bisognerà sincronizzarsi con la repo, quindi si farà il seguente comando.
+2.2 Poi devi fare questo comando.
+
+'git init'
+
+2.3 Bisognerà sincronizzarsi con la repo, quindi si farà il seguente comando.
 
 'git pull'
 
