@@ -1,3 +1,3 @@
 # repo eisi pabbiana
 
-io, nico, dav e blck abbiamo creato questa repo per passare tempo.
+io (ninja), mattone, nico, dav e blck abbiamo creato questa repo per passare tempo.
