@@ -1,3 +1,3 @@
 # aisyrepo
 
-repo by : ninja , nico , blck , dav , mattone , paswordona , coranobruciato
+repo by : ninja , nico , blck , dav , mattone  , coranobruciato
