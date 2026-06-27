@@ -1,3 +1,7 @@
+# codice fatto da : blck/blck67 
+# per qualsiasi cosa scrivermi su ds : lasciato
+# per aiutarmi nello script scrivermi su ds
+# ------------------------------------------------------------------------
 import time
 import sys
 
