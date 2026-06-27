@@ -1,3 +1,14 @@
+# IL CODICE È BUGGATO , CHIUNQUE VOGLIA AIUTARMI PUO SCRIVERMI SU DS O IG
+# ds : lasciato , ig : sopportarti
+# CAUSA BUG : bug nella velocità di creazione di canali
+# CAUSA BUG : bug nello spam di canali
+# ------------------------------------------------------------------------
+# codice fatto da : blck/blck67 
+# per qualsiasi cosa scrivermi su ds : lasciato
+# per aiutarmi nello script scrivermi su ds
+
+# ------------------------------------------------------------------------
+
 import discord
 from discord.ext import commands
 import asyncio
