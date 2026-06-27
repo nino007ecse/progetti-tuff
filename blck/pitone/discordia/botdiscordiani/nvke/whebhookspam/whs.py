@@ -1,3 +1,7 @@
+# codice fatto da : blck/blck67 
+# per qualsiasi cosa scrivermi su ds : lasciato
+# per aiutarmi nello script scrivermi su ds
+# ------------------------------------------------------------------------
 # dovete creare un file webhooks.txt dove mettete SOLO i link dei webhooks dalla APP DI DISCORD
 # dovete creare un file messages.txt dove mettete i messaggi da inviare
 
