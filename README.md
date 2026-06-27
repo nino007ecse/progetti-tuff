@@ -1,3 +1,3 @@
-# repo eisi pabbiana
+# aisyrepo
 
-ninja, mattone, nico, dav, blck e paswordona hanno creato questa repo per passare tempo.
+repo by : ninja , nico , blck , dav , mattone , paswordona , coranobruciato
