@@ -1,3 +1,10 @@
+# codice fatto da : blck/blck67 
+# per qualsiasi cosa scrivermi su ds : lasciato
+# per aiutarmi nello script scrivermi su ds
+# ------------------------------------------------------------------------
+# bot fatto CON I PIEDI , super buggato per qualunque cosa scrivetemi
+# se sapete risolvere i bug scrivetemi
+# loris ti amo
 import discord
 from discord.ext import commands
 import asyncio
