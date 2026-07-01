@@ -1,5 +1,5 @@
 # aisyrepo
 
-repo by : ninja , mattone , nico , blck , dav , coranobruciato
+repo by : ninja , mattone , nico , blck , coranobruciato
 
-ds : @indecifrare , @mattonee , @nicoecse. , @lasciato , @creatxd , @coranoxe
+ds : @indecifrare , @mattonee , @nicoecse. , @lasciato , @coranoxe
