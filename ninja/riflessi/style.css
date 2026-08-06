@@ -1,0 +1,49 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+#game-btn {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.15s ease;
+}
+
+#game-btn.waiting {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+#game-btn.ready {
+    background-color: #f38ba8;
+    color: #11111b;
+}
+
+#game-btn.go {
+    background-color: #a6e3a1;
+    color: #11111b;
+}
+
+#instructions {
+    font-size: 2.5rem;
+    font-weight: bold;
+    pointer-events: none; /* Fa passare il click direttamente al bottone */
+}
+
+#result {
+    font-size: 1.5rem;
+    margin-top: 15px;
+    pointer-events: none;
+}
