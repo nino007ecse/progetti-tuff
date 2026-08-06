@@ -1,3 +1,7 @@
+// === DATO CHE NON MI RICORDO SE QUESTO CODICE È PIENO DI BUG/FINITO NON ASPETTARTI NULLA E SE VUOI AIUTARMI ===
+// === A SISTEMARE IL CODICE SCRIVIMI SU DISCORD: @ninjaecse ===
+
+
 #include <iostream>
 #include <string>
 #include <list>
