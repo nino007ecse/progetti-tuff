@@ -1,4 +1,6 @@
-Tutorial (fatto da NonSonoNinja) pe iniziare ad usare git.
+// ===IL TUTORIAL POTREBBE ESSERE SBAGLIATO NON LO SO NON===
+// ===MI IMPORTA PERÒ FUNZIONA QUINDI ZITTI===
+Tutorial (fatto da ninjaecse) pe iniziare ad usare git.
 
 Capitolo 1. Come accedere alla repo.
 
