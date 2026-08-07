@@ -39,8 +39,7 @@ html, body {
 #instructions {
     font-size: 2.5rem;
     font-weight: bold;
-    pointer-events: none; /* Fa passare il click direttamente al bottone */
-}
+    pointer-events: none;
 
 #result {
     font-size: 1.5rem;
