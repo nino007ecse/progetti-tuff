@@ -2,7 +2,7 @@
 
 repo by : ninja , nico , blck
 
-ds : @indecifrare , @lasciato
+ds : @ninjaecse , @lasciato
 
 
 **This is just a simple repo for sharing our little projects :)**
