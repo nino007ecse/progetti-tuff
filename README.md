@@ -7,6 +7,8 @@ ds : @ninjaecse , @lasciato
 
 **This is just a simple repo for sharing our little projects :)**
 
+**-------------------------------------------------------------------**
+
 **Copyright (c) 2026 nino007ecse (ninja), nicoecse, blcklarper. Tutti i diritti riservati.
 Questo codice è di proprietà esclusiva degli autori sopra indicati. 
 È severamente vietata la copia, la modifica, la distribuzione, la ridistribuzione 
