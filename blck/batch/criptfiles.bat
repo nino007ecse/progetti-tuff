@@ -33,7 +33,7 @@ set /p inputfile="drag your file here : "
 set "inputfile=%inputfile:"=%"
 if not exist "%inputfile%" ( echo file not found & pause & goto menu )
 
-set /p password="enter your secret password : "
+set /p password="enter your secret password (no spaces, quotes, or &) : "
 
 if "%mode%"=="crypt" (
     set "outputfile=%inputfile%.crypt"
@@ -52,23 +52,15 @@ if /i "!custom!"=="y" (
 )
 
 echo processing...
-powershell -Command "& {
-    $pass = '%password%';
-    $key = [Text.Encoding]::UTF8.GetBytes($pass);
-    $bytes = [IO.File]::ReadAllBytes('%inputfile%');
-    $out = New-Object byte[] $bytes.Length;
-    for ($i=0; $i -lt $bytes.Length; $i++) {
-        $out[$i] = $bytes[$i] -bxor $key[$i %% $key.Length];
-    }
-    [IO.File]::WriteAllBytes('%outputfile%', $out);
-    Write-Host 'done!' -ForegroundColor Green;
-}"
+powershell -Command "$p='%password%'; $k=[Text.Encoding]::UTF8.GetBytes($p); $b=[IO.File]::ReadAllBytes('%inputfile%'); $o=New-Object byte[] $b.Length; for($i=0;$i -lt $b.Length;$i++){ $o[$i]=$b[$i] -bxor $k[$i %% $k.Length]; }; [IO.File]::WriteAllBytes('%outputfile%', $o); Write-Host 'done!' -ForegroundColor Green"
+
 if %errorlevel% equ 0 (
     echo.
     echo operation completed.
     echo output file : %outputfile%
 ) else (
-    echo error. check your password for forbidden characters.
+    echo.
+    echo error. check your password and file path.
 )
 pause
 goto menu
