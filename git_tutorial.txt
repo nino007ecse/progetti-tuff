@@ -13,7 +13,7 @@ Capitolo 1. Come accedere alla repo.
 
 'cd desktop'
 
-'git clone https://github.com/nino007ecse/progetti-eisipabbiani.git'
+'git clone https://github.com/nino007ecse/progetti-tuff.git'
 
 Capitolo 2. come iniziare a modificare la repo da git
 
