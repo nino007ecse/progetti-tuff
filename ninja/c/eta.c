@@ -3,7 +3,7 @@
 int main() {
     int età;
 
-    printf("Inserisci la tua età: ");
+    printf("Inserisci l'età dello studente: ");
     scanf("%d", &età);
 
     if (età < 0) {
